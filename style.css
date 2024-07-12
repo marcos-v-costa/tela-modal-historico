@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+
+:root {
+  --color-primary: #60d4ea;
+  --color-primary-one: #12203f;
+  --color-secondary: #010101;
+  --color-tertiary: #373739;
+  --color-quaternary: #9beaf2;
+  --color-quinary: #d0d0d0;
+  --color-senary: #404040;
+  --color-septenary: #a3a3a3;
+  --color-octonary: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#background {
+  position: absolute;
+  height: 78%;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 1.5rem;
+  background-color: var(--color-quinary);
+  border: 0.1rem solid var(--color-secondary);
+}
+
+#top-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  gap: 0.3rem;
+}
+
+#caixa-nome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#texto-nome {
+  font-family: Sora;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--color-secondary);
+}
+
+#info-hist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.texto-info {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--color-senary);
+}
+
+.info-detalhe {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+#main-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 80%;
+  height: 70%;
+  overflow-y: scroll;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  gap: 0.5rem;
+}
+
+#main-modal::-webkit-scrollbar {
+  width: 1rem;
+}
+
+#main-modal::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 3rem;
+}
+
+#main-modal::-webkit-scrollbar-thumb {
+  background: var(--color-senary);
+  border-radius: 3rem;
+}
+
+.caixa-padrao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-octonary);
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 70%;
+  min-height: 3.5rem;
+}
+
+.info-padrao-user {
+  font-family: Montserrat;
+  color: var(--color-senary);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#bottom-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+
+#area-textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+#criado-nome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#banco-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.texto-embaixo {
+  font-family: Montserrat;
+  font-weight: 700;
+  color: var(--color-tertiary);
+  font-size: 1.5rem;
+}
+
+.nome-texto {
+  font-family: Montserrat;
+  font-weight: 500;
+  color: var(--color-senary);
+  font-size: 1.5rem;
+}
